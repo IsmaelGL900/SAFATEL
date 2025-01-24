@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoteles</title>
+    <link rel="icon" href="../IMG/Logo SAFATEL.png">
+    <link rel="stylesheet" href="../CSS/hoteles.html/pc.css">
+    <link rel="stylesheet" href="../CSS/hoteles.html/movil.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body style="background-image: url(../IMG/bokeh-lights-dark-background.jpg);">
+    <div class="container-fluid bg-primary d-flex flex-wrap" style="box-shadow: 1px 1px 15px;">
+        <img src="../IMG/Logo SAFATEL.png" style="width: 250px; height: 200px;" alt="">
+        <nav class="navbar" style="margin: auto; margin-left: 22%;">
+            <div class="container-fluid ">
+              <form class="d-flex " role="search">
+                <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-info" type="submit"><img style="width: 40px;" src="../IMG/lupa.png" alt=""></button>
+              </form>
+            </div>
+        </nav>
+        <img src="../IMG/avatar.png" alt="" class="mx-auto m-auto text rounded" style="width: 150px;">  
+        <img onclick="location.href='index.html'" src="../IMG/cerrar-sesion.png" alt="" class="mx-auto m-auto text rounded" style="width: 70px; cursor: pointer;">
+    </div>
+    <div class="container-fluid" id="containergeneral">
+        <div class="me-4">
+            <img onclick="location.href='indexLogIn.html'" src="../IMG/hogar.png" alt="" class="mt-3 ms-4 btn " style="width: 60px; cursor: pointer; background-color: rgb(136, 96, 230); box-shadow: 1px 1px 15px;">
+        </div>
+        <div class="card" style="height: 470px; width: 20rem; background-color: rgb(18, 180, 239); box-shadow: 10px 5px 15px; margin: auto; margin-top: 20px;">
+            <h2 class="text-light text-center"><u>FILTROS</u></h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center mt-5 bg-info fw-bolder">Ubicación</li>
+                <select class="list-group-item bg-info text-center" id="ubicacion" name="opciones">
+                    <option value="opcion1">Cualquiera</option>
+                    <option value="opcion2">España</option>
+                    <option value="opcion3">Rusia</option>
+                    <option value="opcion4">Australia</option>
+                    <option value="opcion5">Europa</option>
+                    <option value="opcion6">🚨Nuevas Aperturas🚨</option>
+                </select>
+              <li class="list-group-item text-center mt-5 bg-info fw-bolder">Precio</li>
+                <select class="list-group-item bg-info text-center" id="precio" name="opciones">
+                    <option value="opcion0">Cualquiera</option>
+                    <option value="opcion1">50-100€</option>
+                    <option value="opcion2">100-150€</option>
+                    <option value="opcion3">150-200€</option>
+                    <option value="opcion4">200-250€</option>
+                </select>
+              <li class="list-group-item text-center mt-5 bg-info fw-bolder">Calificación</li>
+                <select class="list-group-item bg-info text-center" id="calificacion" name="opciones">
+                    <option value="opcion0">Cualquiera</option>
+                    <option value="opcion1">⭐</option>
+                    <option value="opcion2">⭐⭐</option>
+                    <option value="opcion3">⭐⭐⭐</option>
+                    <option value="opcion4">⭐⭐⭐⭐</option>
+                    <option value="opcion5">⭐⭐⭐⭐⭐</option>
+                </select>
+            </ul>
+        </div>
+        
+            <div class="container-fluid d-flex flex-wrap m-5">
+                <div class="card rounded-2" style="width: 18rem; margin: auto; margin-top: 15px; box-shadow: 1px 1px 10px; background-color: rgb(72, 72, 247);">
+                    <img style="height: 200px;" src="../IMG/hotel madrid.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-light">Hotel Madrid</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item fw-bold" style="background-color: rgb(72, 72, 247); color: rgb(54, 54, 54);">Calle Gran Vía 45, 28013</li>
+                      <li class="list-group-item fw-bold" style="background-color: rgb(72, 72, 247); color: #000;" >260€ / Noche</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="/HTML/hotel/hotelmadrid.html" class="card-link text-info">Más Detalles</a>
+                    </div>
+                </div>
+                <div class="card rounded-2" style="width: 18rem; margin: auto; margin-top: 15px; box-shadow: 1px 1px 10px; background-color: rgb(72, 72, 247);">
+                    <img style="height: 200px;" src="../IMG/hotel vigo.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-light">Hotel Vigo</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item fw-bold" style="background-color: rgb(72, 72, 247); color: rgb(54, 54, 54);">Rúa do Príncipe 12, 36202</li>
+                      <li class="list-group-item fw-bold" style="background-color: rgb(72, 72, 247);  color: #000;">170€ / Noche</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="/HTML/hotel/hotelvigo.html" class="card-link text-info">Más Detalles</a>
+                    </div>
+                </div>
+                <div class="card rounded-2" style="width: 18rem; margin: auto; margin-top: 15px; box-shadow: 1px 1px 10px; background-color: rgb(72, 72, 247);">
+                    <img style="height: 200px;" src="../IMG/hotel moscu.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-light">Hotel Moscú</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item fw-bold" style="background-color: rgb(72, 72, 247); color: rgb(54, 54, 54);">Tverskaya Ulitsa 3, 125009</li>
+                      <li class="list-group-item fw-bold" style="background-color: rgb(72, 72, 247);  color: #000;">300€ / Noche</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="/HTML/hotel/hotelmoscu.html" class="card-link text-info">Más Detalles</a>
+                    </div>
+                </div>
+                <div class="card rounded-2" style="width: 18rem; margin: auto; margin-top: 15px; box-shadow: 1px 1px 10px; background-color: rgb(72, 72, 247);">
+                    <img style="height: 200px;" src="../IMG/hotel San Petersburgo.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-light">Hotel San Petersburgo</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item fw-bold" style="background-color: rgb(72, 72, 247); color: rgb(54, 54, 54);">Nevsky Prospekt 22, 191186</li>
+                      <li class="list-group-item fw-bold" style="background-color: rgb(72, 72, 247);  color: #000;">285€ / Noche</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="/HTML/hotel/hotelsanpetersburgo.html" class="card-link text-info">Más Detalles</a>
+                    </div>
+                </div>
+                <div class="card rounded-2" style="width: 18rem; margin: auto; margin-top: 15px; box-shadow: 1px 1px 10px; background-color: rgb(72, 72, 247);">
+                    <img style="height: 200px;" src="../IMG/hotel sidney.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-light">Hotel Sídney</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item fw-bold" style="background-color: rgb(72, 72, 247); color: rgb(54, 54, 54);">200 George St, Sídney NSW 2000</li>
+                      <li class="list-group-item fw-bold" style="background-color: rgb(72, 72, 247);  color: #000;">300€ / Noche</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="/HTML/hotel/hotelsidney.html" class="card-link text-info">Más Detalles</a>
+                    </div>
+                </div>
+                <div class="card rounded-2" style="width: 18rem; margin: auto; margin-top: 15px; box-shadow: 1px 1px 10px; background-color: rgb(72, 72, 247);">
+                    <img style="height: 200px;" src="../IMG/hotel melbourne.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title text-light">Hotel Melbourne</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item fw-bold text" style="background-color: rgb(72, 72, 247); color: rgb(54, 54, 54); font-size: 15px;">123 Collins St, Melbourne VIC 3000</li>
+                      <li class="list-group-item fw-bold" style="background-color: rgb(72, 72, 247);  color: #000;">225€ / Noche</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="/HTML/hotel/hotelmelbourne.html" class="card-link text-info">Más Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
